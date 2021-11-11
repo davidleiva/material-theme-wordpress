@@ -1,0 +1,12 @@
+{
+  "name": "hello-elementor",
+  "version": "1.0.0",
+  "description": "getlife theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_styles": "sass --watch scss/main.scss:style.min.css"
+  },
+  "author": "david leiva",
+  "license": "ISC"
+}
