@@ -1,12 +1,16 @@
+@import '../node_modules/material-components-web/material-components-web.scss';
+
 :root {
     --font-body: 'Montserrat', sans-serif;
     --color-primary: #104944;
+    --color-primary-light-1: #406D69;
     --color-text: #152825
-  }
+}
   
 body {
     font-family: var(--font-body);
     color: var(--color-text);
+    margin: 0;
 }
 
 .h1, h1 {
@@ -32,3 +36,18 @@ body {
 .h6, h6 {
     font-size: 2rem;
 }
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+main {
+    min-height: calc(100vh - 220px);
+}
+
+@import "_color.scss";
+@import "_sections.scss";
+@import "_header.scss";
+@import "_footer.scss";

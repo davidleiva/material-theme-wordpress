@@ -1,0 +1,22 @@
+.Header {
+    &.site-header { padding-top: 0; }
+
+    &__TopHeader {
+        background-color: var(--color-primary);
+        width: 100%;
+
+        .container {
+            display: flex;
+            justify-content: end;
+        }
+
+        .mdc-button:not(:disabled) {
+            color: white;
+        }
+    }
+
+    &__Logo img {
+        width: 108px;
+        height: auto;
+    }
+}

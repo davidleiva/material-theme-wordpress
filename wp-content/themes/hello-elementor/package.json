@@ -4,9 +4,25 @@
   "description": "getlife theme",
   "main": "index.js",
   "scripts": {
+    "start": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build_styles": "sass --watch scss/main.scss:style.min.css"
+    "build_styles": "sass --watch --load-path=node_modules scss/main.scss:style.min.css"
   },
   "author": "david leiva",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "material-components-web": "^13.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "node-sass": "^6.0.1",
+    "node-sass-package-importer": "^5.3.2",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  }
 }

@@ -1,0 +1,26 @@
+.Section {
+    &.Section--7col5col {
+        .elementor-column.elementor-col-50,
+        .elementor-column[data-col="50"] {
+            &:first-of-type {
+                width: 58.32%;
+            }
+    
+            &:last-of-type {
+                width: 41.66%;
+            }
+        }
+    }
+
+    .CTAs__Container {
+        .elementor-widget-wrap.elementor-element-populated {
+            padding: 0;
+        }
+
+        &.elementor-section .elementor-container .elementor-column {
+            width: auto;
+            margin-right: 2rem;
+        }
+    }
+}
+
