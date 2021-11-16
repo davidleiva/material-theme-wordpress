@@ -1,53 +1,61 @@
-@import '../node_modules/material-components-web/material-components-web.scss';
+@use "sass:map";
+
+$color: (
+  "primary":          #104944,
+  "primary-light-1":  #406d69,
+  "secondary":        #c6e4c9,
+  "text":             #152825,
+  "success":          #31d0aa,
+  "error":            #e65437,
+  "warning":          #ffd864,
+  "info":             #c6e4c9,
+  "background":       #fefefe,
+  "light":            #f8fffe,
+  "dark":             #021514,
+);
+
+$primary: map.get($color, "primary");
+$secondary: map.get($color, "secondary");
+$success: map.get($color, "success");
+$info: map.get($color, "info");  
+$warning: map.get($color, "warning");
+$danger: map.get($color, "error");    
+$light: map.get($color, "light");    
+$dark: map.get($color, "dark");   
+
+@use "@material/theme" with
+  (
+    $primary: #104944,
+    $secondary: #c6e4c9,
+    $background: #fefefe,
+    $surface: #f8fffe,
+    $error: #e65437
+  )
+;
 
 :root {
-    --font-body: 'Montserrat', sans-serif;
-    --color-primary: #104944;
-    --color-primary-light-1: #406D69;
-    --color-text: #152825
-}
-  
-body {
-    font-family: var(--font-body);
-    color: var(--color-text);
-    margin: 0;
-}
-
-.h1, h1 {
-    font-size: 2rem;
-}
-
-.h2, h2 {
-    font-size: 2rem;
+  --font-body: "Montserrat", sans-serif;
+  --color-primary: #104944;
+  --color-secondary: #c6e4c9;
+  --color-primary-light-1: #406d69;
+  --color-text: #152825;
+  --color-success: #31d0aa;
+  --color-error: #e65437;
+  --color-warning: #ffd864;
+  --color-info: #c6e4c9;
+  --color-background: #fefefe;
+  --mdc-outlined-button-label-text-font: "Montserrat", sans-serif;
+  --mdc-typography-button-font-family: "Montserrat", sans-serif;
+  --mdc-typography-font-family: "Montserrat", sans-serif;
 }
 
-.h3, h3 {
-    font-size: 2rem;
-}
+@import "../node_modules/material-components-web/material-components-web.scss";
 
-.h4, h4 {
-    font-size: 2rem;
-}
+@import "_bootstrap_custom-utilities";
 
-.h5, h5 {
-    font-size: 2rem;
-}
-
-.h6, h6 {
-    font-size: 2rem;
-}
-
-.container {
-    width: 100%;
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-main {
-    min-height: calc(100vh - 220px);
-}
-
+@import "_main-styles";
 @import "_color.scss";
-@import "_sections.scss";
+@import "_layout.scss";
 @import "_header.scss";
 @import "_footer.scss";
+@import "_button.scss";

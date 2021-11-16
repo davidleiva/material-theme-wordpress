@@ -1,0 +1,8 @@
+.mdc-button {
+    font-weight: bold;
+}
+
+.mdc-button--raised.mdc-theme--on-warning {
+    background-color: var(--color-warning);
+    color: var(--color-text);
+}

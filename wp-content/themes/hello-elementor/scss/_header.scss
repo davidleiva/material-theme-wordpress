@@ -15,8 +15,121 @@
         }
     }
 
+    &__Container {
+        background-color: var(--color-background);
+        width: 100%;
+    }
+
     &__Logo img {
         width: 108px;
         height: auto;
+    }
+
+    &.site-header .header-inner {
+        justify-content: flex-start;
+    }
+
+    &.site-header .site-navigation {
+        justify-content: flex-start;
+    }
+
+    .site-navigation ul.menu li.menu-item-has-children:after {
+        font-family: 'Material Icons';
+        content: '\e5cf';
+        font-feature-settings: 'liga';
+        -webkit-font-feature-settings: 'liga';
+        color: $primary;
+        font-size: 0.875rem;
+    }
+
+    .site-navigation ul.menu li.Menu__Item {
+        margin-right: 0.25rem;
+
+        &.menu-item-has-children {
+            padding-right: 1.25rem;
+            padding-left: 0.125rem;
+        }
+    }
+
+    .site-navigation ul.menu li:hover>ul {
+        display: none; // Prevent showing the submenu
+    }
+
+    .Menu__Item {
+        &:hover {
+            background-color: #1049441a;
+        }
+        
+        a {
+            color: $primary;
+            text-decoration: none;
+            text-transform: initial;
+            font-weight: 600;
+            font-size: 0.875rem;
+            letter-spacing: -0.1px;
+        }
+    }
+
+    .site-branding {
+        margin-right: 0.5rem;
+    }
+}
+
+// #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu
+
+.Header #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu {
+    width: calc(100vw - 12px);
+    position: absolute;
+    left: -494px;
+
+    opacity: 1 !important;
+    display: block;
+    transform: none !important;
+    visibility: visible;
+}
+
+.MegaMenu {
+    position: absolute;
+    background-color: var(--color-background);
+    width: 100%;
+    left: 0;
+    top: 104px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px 0px rgb(0 0 0 / 15%);
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    &__Summary {
+        width: 33%;
+        border-right: 1px solid #10494475;
+    }
+
+    &__SummaryHeader {
+        margin: 0;
+    }
+
+    &__Summary, &__SubMenu {
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .menu  {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            font-size: 1.25rem;
+            color: var(--color-text);
+
+            &:hover {
+                color: var(--color-primary-light-1);
+            }
+        }
     }
 }

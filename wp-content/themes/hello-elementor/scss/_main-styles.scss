@@ -1,0 +1,45 @@
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.h1,
+h1 {
+  font-size: 2rem;
+}
+
+.h2,
+h2 {
+  font-size: 2rem;
+}
+
+.h3,
+h3 {
+  font-size: 2rem;
+}
+
+.h4,
+h4 {
+  font-size: 2rem;
+}
+
+.h5,
+h5 {
+  font-size: 2rem;
+}
+
+.h6,
+h6 {
+  font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+main {
+  min-height: calc(100vh - 220px);
+}
