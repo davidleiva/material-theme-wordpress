@@ -62,6 +62,11 @@ $header_nav_menu = wp_nav_menu( [
 						echo $header_nav_menu;
 					?>
 
+					<button class="mdc-button mdc-button--raised mdc-theme--on-warning mdc-button--small">
+						<span class="mdc-button__label">Contratar</span>
+						<div class="mdc-button__ripple"></div>
+					</button>
+
 					<section class="MegaMenu mdc-elevation--z3">
 						<div class="container">
 							<div class="row d-flex">

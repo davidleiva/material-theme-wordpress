@@ -1,8 +1,15 @@
 .mdc-button {
     font-weight: bold;
+    text-transform: initial;
 }
 
 .mdc-button--raised.mdc-theme--on-warning {
     background-color: var(--color-warning);
     color: var(--color-text);
+}
+
+.mdc-button--small {
+    height: 2.125rem;
+    font-size: 0.875rem;
+    font-weight: 600;
 }

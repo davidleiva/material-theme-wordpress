@@ -59,3 +59,7 @@ $dark: map.get($color, "dark");
 @import "_header.scss";
 @import "_footer.scss";
 @import "_button.scss";
+
+.border-box {
+  box-sizing: border-box;
+}

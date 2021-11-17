@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build_styles": "sass --watch --load-path=node_modules scss/main.scss:style.min.css"
+    "build_styles": "sass --watch --load-path=node_modules scss/mdb.free.scss:style.min.css"
   },
   "author": "david leiva",
   "license": "ISC",
