@@ -1,0 +1,12 @@
+#wpadminbar{
+    top:auto;
+    bottom: 0;
+}
+#wpadminbar .menupop .ab-sub-wrapper{
+    bottom: 32px;
+}
+@media all and (max-width: 600px){
+    #wpadminbar{
+        position: fixed;
+    }
+}
