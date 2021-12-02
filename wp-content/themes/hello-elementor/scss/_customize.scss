@@ -1,0 +1,89 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+$grey-blue-100: #88adaa;
+$grey-blue-40: rgba(207,219,218,0.4);
+
+.text-grey-blue-100 {
+    color: $grey-blue-100;
+}
+
+.bg-grey-blue-100 {
+    background-color: $grey-blue-100;
+}
+
+.text-grey-blue-40 {
+    color: $grey-blue-40;
+}
+
+.bg-grey-blue-40 {
+    background-color: $grey-blue-40;
+}
+
+.MainSection {
+    height: calc(100vh - 7.75px); // - 124
+    max-height: 37.5rem; // 600
+    display: flex;
+    align-items: center;
+}
+
+.MainSection__Image {
+    position: relative;
+}
+
+.MainSection__Image img,
+.elementor .MainSection__Image img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+@include media-breakpoint-up(lg) {
+    .MainSection__Image img,
+    .elementor .MainSection__Image img {
+        top: 50%;
+        transform: translateY(-50%);
+        right: calc( -1 * (100vw - 1325px)/2);
+        width: 42vw;
+        object-fit: cover;
+        position: absolute;
+        height: calc(100vh - 128px);
+        max-height: 600px;
+        border-radius: 0.5rem 0 0 0.5rem;
+        max-width: initial;
+    }
+}
+
+
+.PressSection img,
+.elementor .PressSection img {
+    height: 80px;
+}
+
+.CancelStepsSection__Number {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.23rem;
+    background-color: $grey-blue-100;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.HeroSection {
+    // background: #f3fffa url('/wp-content/themes/hello-elementor/img/woman_driving.png') bottom right no-repeat;
+    background: #f3fffa url(/wp-content/themes/hello-elementor/img/family-ship.png) bottom right no-repeat;
+    background-size: auto 125%;
+    background-position: right calc(50% + 120px);
+}
+
+.WhatWeOfferSection {
+    background: $primary url('/wp-content/themes/hello-elementor/img/que-ofrece.png') top right no-repeat;
+    background-size: cover;
+}

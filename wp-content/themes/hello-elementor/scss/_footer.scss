@@ -1,4 +1,52 @@
 .Footer {
     background-color: var(--color-primary);
     color: white;
+
+    &.site-footer .footer-inner,
+    &.site-footer .footer-inner .site-branding {
+        display: block;
+    }
+
+    .site-navigation .sub-menu {
+        display: block;
+        background: none;
+        position: initial;
+
+        li {
+            display: block;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    .site-navigation ul.menu li {
+        display: block;
+        border-bottom: 0;
+    }
+
+
+    .site-navigation ul.menu li a {
+        color: white;
+        
+        &.link-secondary {
+            color: #c6e4c9;
+
+            &:hover,
+            &:focus {
+                color: #d1e9d4;
+            }
+        }
+    }
+
+    .site-navigation ul.menu a,
+    .list-item,
+    a {
+        padding: 0.5rem;
+    }
+
+    .site-navigation ul.menu li.menu-item-has-children:after {
+        content: none;
+    }
 }

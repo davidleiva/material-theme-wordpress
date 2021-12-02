@@ -1,3 +1,11 @@
 .color-primary-light-1 {
     color: var(--color-primary-light-1);
 }
+
+.bg-secondary-50 {
+    background-color: rgba(var(--mdb-secondary-rgb), 0.5);
+}
+
+.bg-secondary-25 {
+    background-color: rgba(var(--mdb-secondary-rgb), 0.25);
+}

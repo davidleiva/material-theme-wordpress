@@ -1,3 +1,32 @@
+@use "sass:map";
+
+$color: (
+  "primary":          #104944,
+  "primary-light-1":  #406d69,
+  "secondary":        #c6e4c9,
+  "text":             #152825,
+  "success":          #31d0aa,
+  "error":            #e65437,
+  "warning":          #ffd864,
+  "info":             #c6e4c9,
+  "background":       #fefefe,
+  "light":            #f8fffe,
+  "dark":             #021514,
+);
+
+
+$primary: map.get($color, "primary");
+$secondary: map.get($color, "secondary");
+$success: map.get($color, "success");
+$info: map.get($color, "info");  
+$warning: map.get($color, "warning");
+$danger: map.get($color, "error");    
+$light: map.get($color, "light");    
+$dark: map.get($color, "dark");  
+
+$font-family-base: "Montserrat", sans-serif;
+$body-color: #152825;
+
 // CORE FUNCTIONS
 @import './bootstrap-rtl-fix/functions';
 @import './free/functions';
@@ -101,3 +130,15 @@
 @import './free/range';
 @import './free/accordion';
 @import './free/carousel';
+
+// Custom changes by our team
+@import './main-styles';
+@import './color';
+@import './header';
+@import './footer';
+@import './button';
+@import './customize';
+
+:root {
+    --mdb-gutter-x: 1.25rem;
+}

@@ -1,45 +1,67 @@
 body {
-  font-family: var(--font-body);
-  color: var(--color-text);
-  margin: 0;
+  padding-top: 78px;
 }
 
-.h1,
-h1 {
-  font-size: 2rem;
+.full-width { // https://css-tricks.com/full-width-containers-limited-width-parents/
+  margin-left: calc(-100vw / 2 + 560px / 2);
+  margin-right: calc(-100vw / 2 + 560px / 2);
 }
 
-.h2,
-h2 {
-  font-size: 2rem;
+.Section--FullHeight {
+  min-height: calc(100vh - 10rem);
+  box-sizing: border-box;
 }
 
-.h3,
-h3 {
-  font-size: 2rem;
+.bg-shapes {
+  background: url(/wp-content/themes/hello-elementor/img/shapes-bg.svg) no-repeat right bottom;
+  background-size: cover;
 }
 
-.h4,
-h4 {
-  font-size: 2rem;
+.ClaimSection__Img {
+  width: 41.66666%;
+  left: 58.3333%;
 }
 
-.h5,
-h5 {
-  font-size: 2rem;
+.ClaimSection__Img {
+  object-fit: cover;
 }
 
-.h6,
-h6 {
-  font-size: 2rem;
-}
+// .h1,
+// h1 {
+//   font-size: 2rem;
+// }
 
-.container {
-  width: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
-}
+// .h2,
+// h2 {
+//   font-size: 2rem;
+// }
 
-main {
-  min-height: calc(100vh - 220px);
-}
+// .h3,
+// h3 {
+//   font-size: 2rem;
+// }
+
+// .h4,
+// h4 {
+//   font-size: 2rem;
+// }
+
+// .h5,
+// h5 {
+//   font-size: 2rem;
+// }
+
+// .h6,
+// h6 {
+//   font-size: 2rem;
+// }
+
+// .container {
+//   width: 100%;
+//   max-width: 1180px;
+//   margin: 0 auto;
+// }
+
+// main {
+//   min-height: calc(100vh - 220px);
+// }

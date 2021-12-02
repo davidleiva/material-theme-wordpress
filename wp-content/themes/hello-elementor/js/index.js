@@ -2,6 +2,8 @@ let MegaMenu;
 let dropdownEls;
 let navEls;
 
+let footerItemsToModify;
+
 function resetActives() {
     dropdownEls.forEach(navItem => navItem.classList.remove('active'));
     navEls.forEach(navItem => navItem.classList.remove('active'));
@@ -23,6 +25,15 @@ function toggleMegaMenu(e) {
         e.target.parentElement.classList.add('active');
     }
 }
+
+function customizeFooter() {
+    footerItemsToModify.forEach(el => {
+        var tag = document.createElement('span');
+        tag.innerHTML = el.innerHTML;
+        tag.classList.add('link-secondary','list-item')
+        el.parentNode.replaceChild(tag, el);
+    })
+};
 
 document.onreadystatechange = function () {
     MegaMenu = document.querySelector('.MegaMenu');
@@ -47,4 +58,7 @@ document.onreadystatechange = function () {
             }
         });
     }
+
+    footerItemsToModify = document.querySelectorAll('.Footer .site-navigation ul.menu > li > a:first-child');
+    footerItemsToModify && customizeFooter();
 }
